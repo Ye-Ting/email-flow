@@ -20,6 +20,17 @@ rsupload:
   - 'cloudfiles'
   - 'cdn:cloudfiles'
 
+qnupload:
+  - 'default'
+  - 'cloudfiles'
+  - 'cdn:cloudfiles'
+# Upload images to your CDN on Rackspace Cloud Files
+# $ grunt rsupload
+qnupload:
+  - 'default'
+  # - 'qiniu_upload:prod'
+  # - 'cdn:qiniu'
+
 # Upload image files to Amazon S3
 # $ grunt s3upload
 s3upload:

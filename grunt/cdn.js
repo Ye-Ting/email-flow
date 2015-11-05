@@ -10,6 +10,17 @@ module.exports = {
     dest: './<%= paths.dist %>',
     src: ['*.html']
   },
+
+  qiniu: {
+    options: {
+      cdn: '<%= secrets.qiniu.uri %>', // See README for secrets.json or replace this with your cdn uri
+      flatten: true,
+      supportedTypes: 'html'
+    },
+    cwd: './<%= paths.dist %>',
+    dest: './<%= paths.dist %>',
+    src: ['*.html']
+  },
   
   aws_s3: {
     options: {
