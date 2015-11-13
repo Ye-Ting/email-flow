@@ -1,0 +1,21 @@
+{{!
+	Notification Block
+	Params:
+		type:	(string) accepts 'info', 'success', 'warning', 'danger'
+		class: (string) opional classes you may want to apply such as 'align-center'
+		text: (string) unescaped, the text you wish to display in the notice
+}}
+<table class="notice-wrapper" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="notice-spacer">
+			<table class="dao-notices-info" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<div class="title">下期预告</div>
+					{{{ text }}}					
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>

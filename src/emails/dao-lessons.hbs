@@ -1,0 +1,85 @@
+---
+layout: dao.hbs
+subject: dao记大课堂
+---
+
+{{!-- <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span> --}}
+<div class="header">
+  {{> dao-header }}
+</div>
+<table class="main" border="0" cellpadding="0" cellspacing="0">
+  {{!-- 顶部图片 --}}
+  <tr>
+    <td>
+      {{> dao-main-banner }}      
+    </td>
+  </tr>
+  <tr>
+    <td class="dao-wrapper">
+      <table>
+        <tr>
+          <td>
+            <h2>引言</h2>
+            <p>DaoCloud 提供了一站式 Docker 容器化软件交付服务，为开发者带来 Code to Cloud 的自动化流程，提升软件开发、构建、运维的效率。</p>
+            <p>为了帮助您更好了解 DaoCloud 的产品结构和背后的设计理念，我们启动了「Dao」课堂系列教程。本系列共 10 封邮件，每天一封，按时送达。</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{> dao-content-block 
+        image="../dist/img/example-image.png" 
+        title="引言" 
+        body="为了帮助您更好了解 DaoCloud 的产品结构和背后的设计理念，我们启动了「Dao」课堂系列教程。本系列共 10 封邮件，每天一封，按时送达。" 
+        btnUrl="http://www.baidu.com" 
+        btnText="aaaaaaaaaa"
+      }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{> dao-content-block 
+        image="../dist/img/example-image.png" 
+        title="引言" 
+        body="为了帮助您更好了解 DaoCloud 的产品结构和背后的设计理念，我们启动了「Dao」课堂系列教程。本系列共 10 封邮件，每天一封，按时送达。" 
+        btnUrl="http://www.baidu.com" 
+        btnText="aaaaaaaaaa"
+      }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{> divider}} 
+    </td>
+  </tr>
+  <tr>
+    <td class="dao-wrapper">
+      <h2>代码库管理的最佳实践</h2>
+      <p>在多人协作的开发场景下，代码库和开发分支的管理尤其重要，我们推荐用户采用
+    Gitflow 模型管理代码提交的工作流，Vincent Driessen的文章「A successful Git
+    branching model」（http://nvie.com/posts/a-successful-git-branching-model/）
+    值得一读。
+      </p>
+
+      {{> dao-content-next text='我们将与您聊聊什么是 Dockerfile，以及如何从 Dockerfile 进入精彩的容器世界。
+明天见！' }}
+
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{> dao-content-footer }}
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        {{> dao-footer }} 
+      </td>
+    </tr>
+  </table>
+</div>

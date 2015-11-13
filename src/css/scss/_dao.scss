@@ -1,0 +1,78 @@
+$content-padding: 45px;
+$content-gary: #7d8795;
+$content-line-height: 24px;
+$content-footer-bg-color: #dadfe6;
+.dao-wrapper {
+    padding: $padding $content-padding;
+    p {
+        color: $content-gary;
+    }
+}
+
+.dao-content-block {
+    border-top: 1px solid #e6e9ed;
+    background-image: url("../img/dao-content-bg.png");
+    &-img {
+        box-shadow: 0 6px 16px rgba(16, 17, 18, 0.12);
+    }
+    &-title {
+        margin: $padding 0;
+    }
+    &-body {
+        line-height: $content-line-height;
+    }
+}
+
+.dao-content-footer {
+    padding: 13px 23px;
+    line-height: 28px;
+    background-color: $content-footer-bg-color;
+    color: $content-gary;
+    font-weight: 500;
+    border-radius: 0 0 4px 4px;
+    a {
+        color: #99a1ad;
+        text-decoration: none;
+    }
+}
+
+.dao-notices {
+    &-info {
+        td {
+            background-color: #f5f9fe;
+            border: 1px solid #d2e3fa;
+            border-radius: $notice-border-radius;
+            color: $content-gary;
+            padding: $padding;
+        }
+
+        .title {
+        	color: #558ed9;
+        	font-size: 16px;
+			font-weight: 200;
+			line-height: 18px;
+			margin-bottom: $padding;
+        }
+
+    }
+}
+
+.dao-header {
+    &-time {
+        font-size: 12px;
+        line-height: 20px;
+        color: #7e8890;
+    }
+    &-logo {
+        width: 170px;
+    }
+}
+
+.dao-footer {
+    font-size: 12px;
+    line-height: 21px;
+    color: #a1a6af;
+    td {
+        padding: 0;
+    }
+}
