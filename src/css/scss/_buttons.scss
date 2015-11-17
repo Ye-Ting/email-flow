@@ -4,6 +4,10 @@
 
 .btn {
   width: 100%;
+  background-color: transparent;
+  background: none;
+  padding: 0;
+  border: 0;
 
   > tr > td {
     padding-bottom: 15px;
