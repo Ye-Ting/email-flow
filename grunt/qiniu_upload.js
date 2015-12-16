@@ -6,7 +6,7 @@ module.exports = {
   prod: {
     'files': [{
       'src': '<%= paths.dist_img %>/*',
-      'dest': '/',
+      'dest': '<%= secrets.qiniu.bucket %>',
     }]
   }
 };
