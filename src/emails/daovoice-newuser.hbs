@@ -1,0 +1,73 @@
+---
+layout: dao.hbs
+subject: daovoice 提醒邮件
+---
+
+{{!-- <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span> --}}
+
+<table class="main" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="dao-wrapper">
+			{{> daovoice-newuser-count 
+			name="叶挺" 
+			newuser-count="4"
+			}}
+			
+			<table >
+				<tr>
+					<td>
+						{{> divider }}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						{{> daovoice-user-info }}
+					</td>
+				</tr>	<tr>
+					<td>
+						{{> daovoice-user-info }}
+					</td>
+				</tr>	<tr>
+					<td>
+						{{> daovoice-user-info }}
+					</td>
+				</tr>	<tr>
+					<td>
+						{{> daovoice-user-info }}
+					</td>
+				</tr>	<tr>
+					<td>
+						{{> daovoice-user-info }}
+					</td>
+				</tr>	<tr>
+					<td>
+						{{> daovoice-user-info }}
+					</td>
+				</tr>
+				<tr>
+					<td style="height: 30px;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						{{> button type="info" class="btn-lg" align="center" title="查看全部新用户"}}
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+  <tr>
+    <td>
+      {{> dao-content-footer }}
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        {{> dao-footer }} 
+      </td>
+    </tr>
+  </table>
+</div>

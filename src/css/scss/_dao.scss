@@ -117,12 +117,13 @@ $content-footer-bg-color: #dadfe6;
 
 .dao-avatar
 {
-    height: 60px;
-    padding: 10px 0;
-
-    vertical-align: middle;
+    vertical-align: top;
 
     background: transparent;
+    a
+    {
+        text-decoration: none;
+    }
     img
     {
         z-index: -1;
@@ -133,7 +134,26 @@ $content-footer-bg-color: #dadfe6;
 
         border: none;
     }
-    .avatar-lg
+    span
+    {
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 48px;
+
+        display: block;
+
+        width: 48px;
+        height: 48px;
+
+        text-align: center;
+
+        color: white;
+        border-radius: 128px;
+        background: #f370d2;
+        -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);
+                box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+    }
+    &.avatar-lg
     {
         font-weight: bold;
 
@@ -150,7 +170,7 @@ $content-footer-bg-color: #dadfe6;
         border: none;
         border-radius: 20px;
     }
-    .avatar-md
+    &.avatar-md
     {
         font-weight: bold;
 
@@ -159,7 +179,7 @@ $content-footer-bg-color: #dadfe6;
         display: inline-block;
         overflow: hidden;
 
-        width: 40px;
+        width: 50px;
         margin: 0 auto;
 
         text-decoration: none !important;
@@ -207,7 +227,6 @@ td[class='dao-avatar'] a
 .dao-conversations
 {
     padding: 0 45px 20px;
-
 }
 
 .chat-container
@@ -229,35 +248,115 @@ td[class='dao-avatar'] a
     color: #4d4d4d;
 }
 
-.conversation-admin {
-    .chat-content {
-        background-color: #e9ebf0;
+.conversation-admin
+{
+    .chat-content
+    {
+        padding: 10px 25px;
 
         border-radius: 20px;
-
-        padding: 10px 25px;
+        background-color: #e9ebf0;
     }
 }
 
-.conversation-user {
-    .chat-content {
-        background-color: #206ffd;
+.conversation-user
+{
+    .chat-content
+    {
+        padding: 10px 25px;
 
         color: #fff;
-
         border-radius: 20px;
-
-        padding: 10px 25px;
+        background-color: #206ffd;
     }
 }
 
-.dao-conversation-notify {
-    h2 {
+.dao-newuser-count
+{
+    font-size: 48px;
+
+    margin-bottom: 10px;
+}
+
+.dao-conversation-notify
+{
+    h2
+    {
         color: #333;
     }
-    .conversation-num {
+    .conversation-num
+    {
         font-size: 40px;
         // vertical-align: ;
+    }
+}
+
+.dao-user-info
+{
+    &-text
+    {
+        font-size: 12px;
+
+        padding-left: 5px;
+
+        vertical-align: top;
+
+        color: #2ecc71;
+        h4
+        {
+            font-size: 12px;
+            font-weight: bold;
+
+            margin: 0;
+            padding: 0
+
+            a
+            {
+                display: block;
+                overflow: hidden;
+
+                width: 135px;
+
+                white-space: nowrap;
+                text-decoration: none;
+                text-overflow: ellipsis;
+
+                color: #2ecc71;
+                border: none;
+            }
+
+            color: #1ca7d5;
+        }
+    }
+    &-email
+    {
+        display: block;
+        overflow: hidden;
+
+        width: 135px;
+
+        white-space: nowrap;
+        text-decoration: none;
+        text-overflow: ellipsis;
+
+        color: #2a2e30;
+        border: none;
+    }
+    &-country
+    {
+        font-size: 11px;
+
+        display: block;
+        overflow: hidden;
+
+        width: 135px;
+
+        white-space: nowrap;
+        text-decoration: none;
+        text-overflow: ellipsis;
+
+        color: #7a878b;
+        border: none;
     }
 }
 
