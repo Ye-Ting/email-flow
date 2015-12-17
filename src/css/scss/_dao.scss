@@ -229,6 +229,28 @@ td[class='dao-avatar'] a
     color: #4d4d4d;
 }
 
+.conversation-admin {
+    .chat-content {
+        background-color: #e9ebf0;
+
+        border-radius: 20px;
+
+        padding: 10px 25px;
+    }
+}
+
+.conversation-user {
+    .chat-content {
+        background-color: #206ffd;
+
+        color: #fff;
+
+        border-radius: 20px;
+
+        padding: 10px 25px;
+    }
+}
+
 .dao-conversation-notify {
     h2 {
         color: #333;
