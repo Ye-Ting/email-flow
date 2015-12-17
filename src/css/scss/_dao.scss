@@ -2,84 +2,245 @@ $content-padding: 45px;
 $content-gary: #7d8795;
 $content-line-height: 24px;
 $content-footer-bg-color: #dadfe6;
-.dao-wrapper {
+.dao-wrapper
+{
     padding: $padding $content-padding;
-    p {
+    p
+    {
         color: $content-gary;
     }
 }
 
-.dao-content-block {
+.dao-content-block
+{
     border-top: 1px solid #e6e9ed;
-    background-image: url("../img/dao-content-bg.png");
-    &-img {
-        box-shadow: 0 6px 16px rgba(16, 17, 18, 0.12);
+    background-image: url('../img/dao-content-bg.png');
+    &-img
+    {
         border-radius: $br;
-
+        box-shadow: 0 6px 16px rgba(16, 17, 18, .12);
     }
-    &-title {
+    &-title
+    {
         margin: $padding 0;
     }
-    &-body {
+    &-body
+    {
         line-height: $content-line-height;
     }
 }
 
-.dao-content-footer {
-    padding: 13px 23px;
-    line-height: 28px;
-    background-color: $content-footer-bg-color;
-    color: $content-gary;
+.dao-content-footer
+{
     font-weight: 500;
+    line-height: 28px;
+
+    padding: 13px 23px;
+
+    color: $content-gary;
     border-radius: 0 0 4px 4px;
-    a {
-        color: #99a1ad;
+    background-color: $content-footer-bg-color;
+    a
+    {
         text-decoration: none;
+
+        color: #99a1ad;
     }
 }
 
-.dao-notices {
-    &-info {
-        td {
-            background-color: #f5f9fe;
+.dao-notices
+{
+    &-info
+    {
+        td
+        {
+            padding: $padding;
+
+            color: $content-gary;
             border: 1px solid #d2e3fa;
             border-radius: $notice-border-radius;
-            color: $content-gary;
-            padding: $padding;
+            background-color: #f5f9fe;
         }
+        .title
+        {
+            font-size: 16px;
+            font-weight: 200;
+            line-height: 18px;
 
-        .title {
-        	color: #558ed9;
-        	font-size: 16px;
-			font-weight: 200;
-			line-height: 18px;
-			margin-bottom: $padding;
+            margin-bottom: $padding;
+
+            color: #558ed9;
         }
-
     }
 }
 
-.dao-header {
-    &-time {
+.dao-header
+{
+    &-time
+    {
         font-size: 12px;
         line-height: 20px;
+
         color: #7e8890;
     }
-    &-logo {
+    &-logo
+    {
         width: 170px;
     }
 }
-.dao-main-banner {
-    img {
+
+.dao-main-banner
+{
+    img
+    {
         border-radius: 4px 4px 0 0;
     }
 }
 
-.dao-footer {
+.dao-footer
+{
     font-size: 12px;
     line-height: 21px;
+
     color: #a1a6af;
-    td {
+    td
+    {
         padding: 0;
     }
+    img
+    {
+        display: inline;
+    }
+}
+
+//daovoice
+
+.dao-avatar
+{
+    height: 60px;
+    padding: 10px 0;
+
+    vertical-align: middle;
+
+    background: transparent;
+    img
+    {
+        z-index: -1;
+
+        display: inline-block;
+
+        vertical-align: top;
+
+        border: none;
+    }
+    .avatar-lg
+    {
+        font-weight: bold;
+
+        position: relative;
+
+        display: inline-block;
+        overflow: hidden;
+
+        margin: 0 auto;
+
+        text-decoration: none !important;
+
+        color: #2a2e30;
+        border: none;
+        border-radius: 20px;
+    }
+    .avatar-md
+    {
+        font-weight: bold;
+
+        position: relative;
+
+        display: inline-block;
+        overflow: hidden;
+
+        width: 40px;
+        margin: 0 auto;
+
+        text-decoration: none !important;
+
+        color: #2a2e30;
+        border: none;
+        border-radius: 20px;
+    }
+}
+
+td[class='dao-avatar'] a
+{
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.dao-chat
+{
+    padding: 10px;
+
+    border: 1px solid #c3c8cf;
+    border-radius: 4px;
+    .time
+    {
+        color: #bbb;
+    }
+}
+
+.dao-datetime
+{
+    font-size: 14px;
+    line-height: 28px;
+
+    display: inline-block;
+
+    height: 28px;
+    padding: 0 10px;
+
+    color: #999;
+    border-radius: 16px;
+    background-color: #e5e8ea;
+}
+
+
+.dao-conversations
+{
+    padding: 0 45px 20px;
+    .chat-container
+    {
+        padding-left: 5px;
+    }
+    .chat-metadata
+    {
+        color: #5d9cec;
+        a
+        {
+            color: #5d9cec;
+        }
+    }
+    .chat-content
+    {
+        font-weight: 400;
+
+        color: #4d4d4d;
+    }
+}
+
+.dao-divider-bt
+{
+    border-top: 1px solid #c3c8cf;
+}
+
+.downarrow
+{
+    display: inline-block;
+
+    width: 0;
+    height: 0;
+
+    vertical-align: middle;
+
+    border: 4px solid transparent;
+    border-top-color: #4d4d4d;
 }

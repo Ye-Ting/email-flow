@@ -2,48 +2,76 @@
     OTHER STYLES THAT MIGHT BE USEFUL
 ------------------------------------- */
 
-.last {
-  margin-bottom: 0;
+.last
+{
+    margin-bottom: 0;
 }
 
-.first {
-  margin-top: 0;
+.first
+{
+    margin-top: 0;
 }
 
-.align-center {
-  text-align: center;
+.align-center
+{
+    text-align: center;
 }
 
-.align-right {
-  text-align: right;
+.align-right
+{
+    text-align: right;
 }
 
-.align-left {
-  text-align: left;
+.align-left
+{
+    text-align: left;
 }
 
-.clear {
-  clear: both;
+.clear
+{
+    clear: both;
 }
 
-.mt0 {
-  margin-top: 0;
+.mt0
+{
+    margin-top: 0;
 }
 
-.mb0 {
-  margin-bottom: 0;
+.pt0
+{
+    padding-top: 0;
+}
+
+.mb0
+{
+    margin-bottom: 0;
+}
+
+.pb0
+{
+    padding-bottom: 0;
+}
+
+.py0
+{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 // Preheader text is displayed in certain clients as a preview but not shown when the user opens the email
-.preheader {
-  color: transparent;
-  display: none;
-  height: 0;
-  max-height: 0;
-  max-width: 0;
-  opacity: 0;
-  overflow: hidden;
-  mso-hide: all;
-  visibility: hidden;
-  width: 0;
+.preheader
+{
+    display: none;
+    visibility: hidden;
+    overflow: hidden;
+
+    width: 0;
+    max-width: 0;
+    height: 0;
+    max-height: 0;
+
+    opacity: 0;
+    color: transparent;
+
+    mso-hide: all;
 }

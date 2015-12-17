@@ -1,0 +1,38 @@
+---
+layout: dao.hbs
+subject: daovoice 提醒邮件
+---
+
+{{!-- <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span> --}}
+
+<table class="main" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td class="dao-wrapper">
+			{{> daovoice-main-chat name="叶挺" 
+        chat-content="服务器打不开请速速回复" 
+        chat-time="02:20:30 12/12"
+        admin-name="Fiona"
+        admin-avatar="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgc3R5bGU9IndpZHRoOiAxMDBweDsgaGVpZ2h0OiAxMDBweDsgYm9yZGVyLXJhZGl1czogMHB4OyBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTI3LCAxNDAsIDE0MSk7Ij48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB5PSI1MCUiIHg9IjUwJSIgZHk9IjAuMzVlbSIgcG9pbnRlci1ldmVudHM9ImF1dG8iIGZpbGw9IiNmZmZmZmYiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2FOZXVlLUxpZ2h0LEhlbHZldGljYSBOZXVlIExpZ2h0LEhlbHZldGljYSBOZXVlLEhlbHZldGljYSwgQXJpYWwsTHVjaWRhIEdyYW5kZSwgc2Fucy1zZXJpZiIgc3R5bGU9ImZvbnQtd2VpZ2h0OiA0MDA7IGZvbnQtc2l6ZTogNjBweDsiPkY8L3RleHQ+PC9zdmc+"
+      }}
+		</td>
+	</tr>
+  <tr>
+    <td>
+      {{> daovoice-conversations }}
+    </td>
+  </tr>
+  <tr>
+    <td>
+      {{> dao-content-footer }}
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        {{> dao-footer }} 
+      </td>
+    </tr>
+  </table>
+</div>
