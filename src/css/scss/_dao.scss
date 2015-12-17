@@ -227,6 +227,16 @@ td[class='dao-avatar'] a
     }
 }
 
+.dao-conversation-notify {
+    h2 {
+        color: #333;
+    }
+    .conversation-num {
+        font-size: 40px;
+        // vertical-align: ;
+    }
+}
+
 .dao-divider-bt
 {
     border-top: 1px solid #c3c8cf;
