@@ -207,24 +207,26 @@ td[class='dao-avatar'] a
 .dao-conversations
 {
     padding: 0 45px 20px;
-    .chat-container
-    {
-        padding-left: 8px;
-    }
-    .chat-metadata
+
+}
+
+.chat-container
+{
+    padding-left: 8px;
+}
+.chat-metadata
+{
+    color: #5d9cec;
+    a
     {
         color: #5d9cec;
-        a
-        {
-            color: #5d9cec;
-        }
     }
-    .chat-content
-    {
-        font-weight: 400;
+}
+.chat-content
+{
+    font-weight: 400;
 
-        color: #4d4d4d;
-    }
+    color: #4d4d4d;
 }
 
 .dao-conversation-notify {
